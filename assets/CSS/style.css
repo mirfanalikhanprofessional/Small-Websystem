@@ -1,0 +1,1011 @@
+/*Google font import link*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+/* Elements same for all pages */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+.h1,h1{
+	font-size: 2.25rem;
+}
+.h2,h2{
+	font-size: 2rem;
+}
+.h3,h3{
+	font-size: 1.75rem;
+}
+.h4,h4{
+	font-size: 1.5rem;
+}
+.h5,h5{
+	font-size: 1.25rem;
+}
+.h6,h6{
+	font-size: 1rem;
+}
+.body{
+	background: url(../Img/bg.jpg);
+	opacity: 0.8;
+	background-attachment: fixed;
+	background-size: cover;
+	box-shadow: 1rem 0 rgba(0, 0, 0, .2);
+}
+/*header part design*/
+.main-wrapper{
+	max-width: 100%;
+	height: auto;
+}
+.pc-header{
+	max-width: 100%;
+	height: 60px;
+	background: #ffffff;
+}
+.pc-header-logo{
+	width: 33.33%;
+	height: 100%;
+	float: left;
+}
+.pc-nav{
+	width: 33.33%;
+	height: 100%;
+	float: left;
+}
+.pc-nav-item-block{
+	max-width: 100%;
+	list-style-type: none;
+	padding: 5px;
+}
+.pc-nav-item{
+	width: 30%;
+	height: 20px;
+	float: left;
+	margin: 15px auto;
+	text-align: center;
+	justify-content: center;
+	font-family: 'Raleway', sans-serif;
+}
+.pc-nav-item a{
+	color: black;
+	font-weight: bold;
+	text-decoration: none;
+	justify-content: center;
+}
+.pc-nav-item a:hover{
+	color: #00b791;
+}
+.pc-header-button-group{
+	width: 33.33%;
+	height: 100%;
+	float: left;
+	margin-top: 20px;
+}
+.pc-header-button-group a{
+	text-decoration: none;
+	color: #0bb791;
+}
+.pc-header-button-group .pc-header-button{
+	width: 10%;
+	height: 20px;
+	background: #ffffff;
+	padding: 10px;
+	border: 2px solid #0bb791;
+	text-align: center;
+	justify-content: center;
+	justify-items: center;
+	font-family: 'Raleway', sans-serif;
+	background: #ffffff;
+	font-weight: bolder;
+}
+.pc-header-button-group .pc-header-button:hover{
+	background: #00b791;
+	color: #ffffff;
+}
+.pc-header-button-group .pc-header-button:nth-child(1){
+	margin-left: 20px;
+	margin-bottom: -20px;
+}
+.tablet-header{
+	display: none;
+}
+.mobile-header{
+	display: none;
+}
+/*Header CSS end*/
+/*register-Page CSS start*/
+.container{
+	width: 100%;
+	height: auto;
+}
+.form-container{
+	max-width: 40%;
+	margin: 10px auto;
+	padding: 10px 20px;
+	border-radius: 40px;
+	background: rgba(49, 195, 163, 0.1);
+	backdrop-filter: blur(12px);
+	background: #f4f7f8;
+	color: black;
+	font-family: 'Raleway', sans-serif;
+}
+.form-button{
+	width: 100%;
+	position: relative;
+	display: block;
+	padding: 19px 39px 18px 39px;
+	border: 2px solid #0bb791;
+	font-family: 'Raleway', sans-serif;
+	background: inherit;
+	font-weight: bolder;
+	color: #00b791;
+	margin: auto;
+	font-size: 18px;
+	border-width: 1px 1px 3px;
+}
+.form-button:hover{
+	background: #00b791;
+	color: #ffffff;
+}
+.form-input{
+	width: 100%;
+	background: rgba(255,255,255,.1);
+	border: none;
+	border-radius: 4px;
+	font-size: 16px;
+	margin: 0;
+	padding: 7px; 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box;
+	background-color: #e8eeef;
+	color: #000000;
+	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	margin-bottom: 30px;
+}
+.mini-heading{
+	background: #00b791;
+	color: #fff;
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+	font-size: 0.8em;
+	margin-right: 4px;
+	line-height: 30px;
+	text-align: center;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+	border-radius: 15px 15px 15px 0px;	
+}
+.checkbox-cover input[type=checkbox]{
+	-ms-transform: scale(2); /* IE */
+	-moz-transform: scale(2); /* FF */
+	-webkit-transform: scale(2); /* Safari and Chrome */
+	-o-transform: scale(2); /* Opera */
+	transform: scale(2);
+	padding: 10px;
+}
+.checkbox-cover input:checked{
+	background: #00b791;
+}
+.checkmark{
+	margin-left: 10px;
+}
+.captcha{
+	width: 90%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	border-radius: 20px;
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+	justify-content: center;
+	margin: auto;
+	background: #fff;
+}
+.captcha-header{
+	background: #00b791;
+	color: #fff;
+	font-size: 1.5rem;
+	width: 100%;
+	text-align: center;
+	justify-content: center;
+	border-radius: 20px 20px 0 0;
+}
+.security-code{
+	width: 100%;
+	height: 130px;
+	background: url('../Img/captchabg1.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.security-code p{
+	text-align: center;
+	line-height: 60px;
+	color: #fff;
+	font-family: 'Raleway', sans-serif;
+	font-size: 5vw;
+	letter-spacing: 10px;
+	user-select: none;
+}
+.captcha-input{
+	margin-top: 10px;
+}
+.captcha-button{
+	background: #ffffff;
+	padding: 10px;
+	border: 2px solid #0bb791;
+	margin-top: 30px;
+	font-family: 'Raleway', sans-serif;
+	background: #ffffff;
+	font-weight: bolder;
+	color: #00b791;
+}
+.captcha-button a{
+	text-decoration: none;
+	color: #00b791;		
+}
+.captcha-button:hover{
+	background: #00b791;
+	color: #ffffff;
+	cursor: pointer;
+}
+/*register page CSS end*/
+/*dashboard CSS start*/
+.iframe-container{
+	width: 60%;
+	height: 60%;
+	margin: auto;
+	padding: auto;
+	text-align: center;
+	justify-content: center;
+}
+.iframe-container h3{
+	font-size: 25px;
+	margin-bottom: 100px;
+}
+iframe{
+	border: 0px;
+	width: 600px;
+	height: 450px;
+	justify-content: center;
+	text-align: center;
+	margin: auto;
+}
+/*dashboard CSS end*/
+/*footer CSS start*/
+.footer {
+	max-width: 97%;
+	margin: auto;
+}
+hr{
+	max-width: 100%;
+	margin-top: 10px;
+	border: 2px solid #00b791;
+}
+.footer p{
+	font-family: "Raleway", sans-serif;
+	margin: auto;
+	text-align: center;
+	justify-content: center;
+	color: #00b791;
+}
+/*footer CSS end*/
+@media only screen and (max-width: 800px){	
+	/*register page CSS start*/
+	.pc-header{
+		display: none;
+	}
+	.tablet-header{
+		width: 100%;	
+		height: 55px;
+		background: white;
+		display: block;
+	}
+	.menu{
+		width: 25%;
+		font-size: 15px;
+		background: #ffffff;
+		padding: 9px;
+		margin-top: 10px;
+		border: 2px solid #0bb791;
+		font-family: 'Raleway', sans-serif;
+		background: #ffffff;
+		font-weight: bolder;
+		color: #00b791;
+		transition: all 0.3s ease-in-out;
+	}
+	.tablet-header-nav{
+		width: 40%;
+		height: 100%;
+		float: left;
+		color: #00b791;
+		margin-left: 10px;
+		background: white;
+		font-size: 10px;
+		font-family: 'Raleway', sans-serif;
+		transition: all 0.3s ease-in-out;
+	}
+	.tablet-header-nav-block{
+		width: 20%;
+		height: 100%;
+		background: rgba(49, 195, 163, 0.1);
+		box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+		list-style-type: none;
+		visibility: hidden;
+		transition: all 0.3s ease-in-out;
+		margin-top: 10px;
+		margin-left: 45px;
+	}
+	.tablet-header-nav-item a{
+		text-decoration: none;
+		color: #ffffff;
+		opacity: 0;
+		font-size: 14px;
+		margin-left: -30px;
+		transition: all 0.3s ease-in-out;
+	}
+	.tablet-header-logo{
+		width: 47%;
+		float: left;
+	}
+	.tablet-header-logo img{
+		position: absolute;
+		margin: 5px 130px;
+	}
+	.form-input{
+		font-size: 12px;
+	}
+	.form-container label{
+		font-size: 11px;
+	}
+	.mini-heading{
+		font-size: 10px;
+	}
+	p{
+		font-size: 10px;
+	}
+	.checkbox-cover input[type=checkbox]{
+		-ms-transform: scale(1); /* IE */
+		-moz-transform: scale(1); /* FF */
+		-webkit-transform: scale(1); /* Safari and Chrome */
+		-o-transform: scale(1); /* Opera */
+		transform: scale(1);
+		padding: 10px;
+	}
+	.captcha{
+		width: 100%;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		border-radius: 20px;
+		font-family: 'Raleway', sans-serif;
+		text-align: center;
+		justify-content: center;
+		margin: auto;
+		background: #fff;
+	}
+	.security-code p{
+		letter-spacing: 8px;
+	}
+	.form-button{
+		width: 100%;
+		position: relative;
+		display: block;
+		padding: 10px 30px 12px 25px;
+		border: 2px solid #0bb791;
+		font-family: 'Raleway', sans-serif;
+		background: inherit;
+		font-weight: bolder;
+		color: #00b791;
+		margin: auto;
+		font-size: 18px;
+		border-width: 1px 1px 3px;
+	}
+	/*register page CSS end*/
+	/*dashboard CSS start*/
+	.iframe-container{
+		width: 100%;
+		height: 100%;
+		margin: auto;
+		padding: auto;
+		text-align: center;
+		justify-content: center;
+	}
+	.iframe-container h3{
+		font-size: 20px;
+	}
+	iframe{
+		width: 100%;
+		height: 600px;
+		justify-content: center;
+		text-align: center;
+		margin: auto;
+		padding: 5px;
+	}
+	/*dashboard CSS end*/
+	/*footer css start*/
+	.footer {
+		max-width: 97%;
+		margin: auto;
+	}
+	hr{
+		max-width: 100%;
+		margin-top: 10px;
+		border: 2px solid #00b791;
+	}
+	.footer p{
+        font-family: "Raleway", sans-serif;
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+        color: #00b791;
+    }
+	/*Footer CSS end*/
+}
+@media only screen and (max-width: 545px){
+	/*register page CSS start*/
+	.pc-header{
+		display: none;
+	}
+	.tablet-header{
+		display: none;
+	}
+	.mobile-header{
+		max-width: 100%;	
+		height: 55px;
+		background: white;
+		display: block;
+	}
+	.menu{
+		width: 30%;
+		font-size: 15px;
+		background: #ffffff;
+		padding: 8px;
+		border: 2px solid #0bb791;
+		font-family: 'Raleway', sans-serif;
+		background: #ffffff;
+		font-weight: bolder;
+		color: #00b791;
+		transition: all 0.3s ease-in-out;
+	}
+	.mobile-header-nav{
+		width: 40%;
+		height: 100%;
+		float: left;
+		color: #00b791;
+		margin-left: 10px;
+		background: white;
+		font-size: 10px;
+		font-family: 'Raleway', sans-serif;
+		transition: all 0.3s ease-in-out;
+	}
+	.mobile-header-nav-block{
+		width: 5%;
+		height: 100%;
+		background: rgba(49, 195, 163, 0.1);
+		box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+		list-style-type: none;
+		visibility: hidden;
+		transition: all 0.3s ease-in-out;
+		margin-top: 8px;
+		margin-left: 45px;
+	}
+	.mobile-header-nav-item a{
+		text-decoration: none;
+		color: #ffffff;
+		opacity: 0;
+		font-size: 14px;
+		margin-left: -30px;
+		transition: all 0.3s ease-in-out;
+	}
+	.mobile-header-logo{
+		width: 47%;
+		float: left;
+	}
+	.mobile-header-logo img{
+		position: absolute;
+		/*margin: 10px 130px;*/
+		top: 10px;
+		left: 150px;
+	}
+	.form-input{
+		font-size: 10px;
+	}
+	.form-container label{
+		font-size: 8px;
+	}
+	.mini-heading{
+		font-size: 6px;
+		background: #00b791;
+		color: #fff;
+		height: 15px;
+		width: 15px;
+		display: inline-block;
+		margin-right: 4px;
+		line-height: 15px;
+		text-align: center;
+		text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+		border-radius: 15px 15px 15px 0px;
+	}
+	p{
+		font-size: 6px;
+	}
+	.checkbox-cover input[type=checkbox]{
+		-ms-transform: scale(0.5); /* IE */
+		-moz-transform: scale(0.5); /* FF */
+		-webkit-transform: scale(0.5); /* Safari and Chrome */
+		-o-transform: scale(0.5); /* Opera */
+		transform: scale(0.5);
+		padding: 18px;
+	}
+	.captcha{
+		width: 100%;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		border-radius: 20px;
+		font-family: 'Raleway', sans-serif;
+		text-align: center;
+		justify-content: center;
+		margin: auto;
+		background: #fff;
+	}
+	.captcha-header{
+		font-size: 15px;
+	}
+	.security-code{
+		width: 100%;
+		height: 100px;
+		background: url('../Img/captchabg1.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+	}
+	.security-code p{
+		letter-spacing: 6px;
+	}
+	.captcha-button{
+		background: #ffffff;
+		padding: 8px;
+		margin-top: 10px;
+		border: 2px solid #0bb791;
+		margin-top: 30px;
+		font-family: 'Raleway', sans-serif;
+		background: #ffffff;
+		font-weight: bolder;
+		color: #00b791;
+		font-size: 12px;
+	}
+	.form-button{
+		width: 100%;
+		position: relative;
+		display: block;
+		padding: 8px 20px 8px 15px;
+		border: 2px solid #0bb791;
+		font-family: 'Raleway', sans-serif;
+		background: inherit;
+		font-weight: bolder;
+		color: #00b791;
+		margin: auto;
+		font-size: 18px;
+		border-width: 1px 1px 3px;
+	}
+	/*register page CSS end*/
+	/*dashboard CSS start*/
+	.iframe-container{
+		width: 100%;
+		height: 100%;
+		margin: auto;
+		padding: auto;
+		text-align: center;
+		justify-content: center;
+	}
+	.iframe-container h3{
+		font-size: 17px;
+	}
+	iframe{
+		width: 100%;
+		height: 600px;
+		justify-content: center;
+		text-align: center;
+		margin: auto;
+		padding: 5px;
+	}
+	/*dashboard CSS end*/
+	/*Footer CSS start*/
+	.footer {
+		max-width: 97%;
+		margin: auto;
+	}
+	hr{
+		max-width: 100%;
+		margin-top: 10px;
+		border: 2px solid #00b791;
+	}
+	.footer p{
+        font-family: "Raleway", sans-serif;
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+        color: #00b791;
+    }
+	/*Footer CSS end*/
+}
+@media only screen and (max-width: 430px){
+	/*register page CSS start*/
+	.pc-header{
+		display: none;
+	}
+	.tablet-header{
+		display: none;
+	}
+	.mobile-header{
+		max-width: 100%;	
+		height: 55px;
+		background: white;
+		display: block;
+	}
+	.menu{
+		width: 5%;
+		font-size: 15px;
+		background: #ffffff;
+		padding: 6px;
+		border: 2px solid #0bb791;
+		font-family: 'Raleway', sans-serif;
+		background: #ffffff;
+		font-weight: bolder;
+		color: #00b791;
+		transition: all 0.3s ease-in-out;
+	}
+	.mobile-header-nav{
+		width: 40%;
+		height: 100%;
+		float: left;
+		color: #00b791;
+		margin-left: 10px;
+		background: white;
+		font-size: 10px;
+		font-family: 'Raleway', sans-serif;
+		transition: all 0.3s ease-in-out;
+	}
+	.mobile-header-nav-block{
+		width: 100%;
+		height: 100%;
+		background: rgba(49, 195, 163, 0.1);
+		box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+		list-style-type: none;
+		visibility: hidden;
+		transition: all 0.3s ease-in-out;
+		margin-bottom: -20px;
+		margin-left: 35px;
+	}
+	.mobile-header-nav-item a{
+		text-decoration: none;
+		color: #ffffff;
+		opacity: 0;
+		font-size: 14px;
+		margin-left: -30px;
+		transition: all 0.3s ease-in-out;
+	}
+	.mobile-header-logo{
+		width: 47%;
+		float: left;
+	}
+	.mobile-header-logo img{
+		position: absolute;
+		top: 10px;
+		left: 120px;
+	}
+	.form-input{
+		font-size: 10px;
+	}
+	.form-container label{
+		font-size: 8px;
+	}
+	.mini-heading{
+		font-size: 8px;
+	}
+	p{
+		font-size: 6px;
+	}
+	.checkbox-cover input[type=checkbox]{
+		-ms-transform: scale(0.5); /* IE */
+		-moz-transform: scale(0.5); /* FF */
+		-webkit-transform: scale(0.5); /* Safari and Chrome */
+		-o-transform: scale(0.5); /* Opera */
+		transform: scale(0.5);
+		padding: 18px;
+	}
+	.captcha{
+		width: 100%;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		border-radius: 20px;
+		font-family: 'Raleway', sans-serif;
+		text-align: center;
+		justify-content: center;
+		margin: auto;
+		background: #fff;
+	}
+	.captcha-header{
+		font-size: 15px;
+	}
+	.security-code{
+		width: 100%;
+		height: 100px;
+		background: url('../Img/captchabg1.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+	}
+	.security-code p{
+		letter-spacing: 6px;
+	}
+	.captcha-button{
+		background: #ffffff;
+		padding: 8px;
+		border: 2px solid #0bb791;
+		margin-top: 30px;
+		font-family: 'Raleway', sans-serif;
+		background: #ffffff;
+		font-weight: bolder;
+		color: #00b791;
+		font-size: 12px;
+	}
+	.form-button{
+		width: 100%;
+		position: relative;
+		display: block;
+		padding: 8px 20px 8px 15px;
+		border: 2px solid #0bb791;
+		font-family: 'Raleway', sans-serif;
+		background: inherit;
+		font-weight: bolder;
+		color: #00b791;
+		margin: auto;
+		font-size: 18px;
+		border-width: 1px 1px 3px;
+	}
+	/*register page CSS end*/
+	/*dashboard CSS start*/
+	.iframe-container{
+		width: 100%;
+		height: 100%;
+		margin: auto;
+		padding: auto;
+		text-align: center;
+		justify-content: center;
+	}
+	.iframe-container h3{
+		font-size: 15px;
+	}
+	iframe{
+		width: 100%;
+		height: 600px;
+		justify-content: center;
+		text-align: center;
+		margin: auto;
+		padding: 5px;
+	}
+	/*dashboard CSS end*/
+	/*Footer CSS start*/
+	.footer {
+		max-width: 97%;
+		margin: auto;
+	}
+	.footer h3{
+		font-size: 15px;
+	}
+	hr{
+		max-width: 100%;
+		margin-top: 10px;
+		border: 2px solid #00b791;
+	}
+	.footer p{
+        font-family: "Raleway", sans-serif;
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+        color: #00b791;
+    }
+	/*Footer CSS end*/
+}
+@media only screen and (max-width: 452px){
+		/*register page CSS start*/
+	.pc-header{
+		display: none;
+	}
+	.tablet-header{
+		display: none;
+	}
+	.mobile-header{
+		max-width: 100%;	
+		height: 55px;
+		background: white;
+		display: block;
+	}
+	.menu{
+		width: 50%;
+		font-size: 15px;
+		background: #ffffff;
+		padding: 8px;
+		border: 2px solid #0bb791;
+		font-family: 'Raleway', sans-serif;
+		background: #ffffff;
+		font-weight: bolder;
+		color: #00b791;
+		transition: all 0.3s ease-in-out;
+	}
+	.mobile-header-nav{
+		width: 40%;
+		height: 100%;
+		float: left;
+		color: #00b791;
+		margin-left: 10px;
+		background: white;
+		font-size: 10px;
+		font-family: 'Raleway', sans-serif;
+		transition: all 0.3s ease-in-out;
+	}
+	.mobile-header-nav-block{
+		width: 5%;
+		height: 100%;
+		background: rgba(49, 195, 163, 0.1);
+		box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+		list-style-type: none;
+		visibility: hidden;
+		transition: all 0.3s ease-in-out;
+		margin-top: -5px;
+		margin-left: 5px;
+	}
+	.mobile-header-nav-item a{
+		text-decoration: none;
+		color: #ffffff;
+		opacity: 0;
+		font-size: 12px;
+		line-height: 10px;
+		margin-left: -2px;
+		transition: all 0.3s ease-in-out;
+	}
+	.mobile-header-logo{
+		width: 37%;
+		float: left;
+	}
+	.mobile-header-logo img{
+		position: absolute;
+		top: 10px;
+		left: 100px;
+	}
+	.form-input{
+		font-size: 6px;
+	}
+	.form-container label{
+		font-size: 4px;
+	}
+	.mini-heading{
+		font-size: 6px;
+		margin-right: 4px;
+		line-height: 20px;
+		background: #00b791;
+		color: #fff;
+		height: 8px;
+		width: 8px;
+		display: inline-block;
+		text-align: center;
+		text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+		border-radius: 15px 15px 15px 0px;
+	}
+	p{
+		font-size: 4px;
+	}
+	.checkbox-cover input[type=checkbox]{
+		-ms-transform: scale(0.5); /* IE */
+		-moz-transform: scale(0.5); /* FF */
+		-webkit-transform: scale(0.5); /* Safari and Chrome */
+		-o-transform: scale(0.5); /* Opera */
+		transform: scale(0.5);
+		padding: 18px;
+	}
+	.captcha{
+		width: 100%;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		border-radius: 20px;
+		font-family: 'Raleway', sans-serif;
+		text-align: center;
+		justify-content: center;
+		margin: auto;
+		background: #fff;
+	}
+	.captcha-header{
+		font-size: 6px;
+	}
+	.security-code{
+		width: 100%;
+		height: 70px;
+		background: url('../Img/captchabg1.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+	}
+	.security-code p{
+		letter-spacing: 1px;
+	}
+	.captcha-button{
+		background: #ffffff;
+		padding: 6px;
+		border: 1px solid #0bb791;
+		margin-top: 30px;
+		font-family: 'Raleway', sans-serif;
+		background: #ffffff;
+		font-weight: bolder;
+		color: #00b791;
+		font-size: 7px;
+	}
+	.form-input{
+		width: 100%;
+	}
+	.form-button{
+		width: 100%;
+		position: relative;
+		display: block;
+		padding: 8px 20px 8px 15px;
+		border: 2px solid #0bb791;
+		font-family: 'Raleway', sans-serif;
+		background: inherit;
+		font-weight: bolder;
+		color: #00b791;
+		margin: auto;
+		font-size: 9px;
+		border-width: 1px 1px 3px;
+	}
+	/*register page CSS end*/
+	/*dashboard CSS start*/
+	.iframe-container{
+		width: 100%;
+		height: 100%;
+		margin: auto;
+		padding: auto;
+		text-align: center;
+		justify-content: center;
+	}
+	.iframe-container h3{
+		font-size: 13px;
+	}
+	iframe{
+		width: 100%;
+		height: 600px;
+		justify-content: center;
+		text-align: center;
+		margin: auto;
+		padding: 5px;
+	}
+	/*dashboard CSS end*/
+	/*Footer CSS start*/
+	.footer {
+		max-width: 97%;
+		margin: auto;
+		position: fixed;
+	}
+	hr{
+		max-width: 100%;
+		margin-top: 180px;
+		border: 2px solid #00b791;
+	}
+	.footer p{
+	font-family: "Raleway", sans-serif;
+	margin: auto;
+	text-align: center;
+	justify-content: center;
+	color: #00b791;
+    }
+	/*Footer CSS end*/
+}
